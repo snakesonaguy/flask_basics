@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie List</title>
+</head>
+<body>
+    <h1>Movies to watch:</h1>
+    <h2>This collection belongs to {{ name }}.</h2>
+
+    <hr>
+
+    {% for item in movies %}
+
+        <ul>
+            <li>{{ item }}</li>
+        </ul>
+    {% endfor %}
+</body>
+</html>
